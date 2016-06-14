@@ -18,13 +18,14 @@ body {
 
 .text-vertical-center {
     display: table-cell;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
+    padding-left: 10%;
 }
 
 .text-vertical-center h1 {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
     font-size: 4.5em;
     font-weight: 700;
 }
@@ -63,8 +64,17 @@ hr.small {
     max-width: 100px;
 }
 
-/* Side Menu */
+/* Navbar */
+.navbar-default {
+	background-color: #F9F7EB;
+	border-color: rgba(255, 255, 255, 0.3);
+	color: #000;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 700;
+	font-size: 1.2em;
+}
 
+/* Side Menu */
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -160,6 +170,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: #fff;
 }
 
 /* About */
@@ -171,7 +182,13 @@ hr.small {
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 50px 0;    
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* background-color: #6c6181; */    
 }
 
 .service-item {
